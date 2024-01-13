@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+#section-main{
+    height: 633px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color:black;
+}
+.container {
+    height: 423px;
+    display: flex;
+    justify-content: flex-end;
+}
+.animated-bg {
+    left: 90px;
+    width: 40%;
+    height: 70%;
+    background-color: #FF9800;
+    position: absolute;
+    top: 42px; 
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    display: block;
+    z-index: 0;
+    animation: bubbleAnimation 3s ease-in-out infinite alternate;
+}
+@keyframes bubbleAnimation {
+    0%, 100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg); 
+    }
+    34% {
+        transform: translate3d(0, 5px, 0) rotateZ(0.01deg); 
+    }
+    50% {
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg); 
+    }
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; 
+        transform: translate3d(0, -3px, 0) rotateZ(0.01deg); 
+    }
+}
+.content {
+    margin-top: 50px;
+    width: 1220px;
+    height: 516px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+ .content-wrap {
+    height: 258px;
+    width: 595px;
+    position: relative;
+    left: 590px;
+    top: 11px;
+} 
+h5 {
+    font-size: 25px;
+    color: 	#b3b305;
+    margin: 5px;
+    clear: both;
+    font-family: 'Marhey', sans-serif;
+}
+h2 {
+    font-size: 78px;
+    margin: 5px;
+    font-weight: 800;
+    color:  #F4CE14;
+    font-family: 'Marhey', sans-serif;
+}
+p {
+    margin: 5px;
+    padding: 0;
+    font-size: 22px;
+    color: #e28913;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+.img-wrapp {
+    border-radius: 10px;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 68px;  
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+}
+
+.img-wrapp img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.buttom-style {
+    width: 400px;
+    height: 350px;
+    bottom: -220px;
+    right: -50px; 
+    position: absolute;
+    color: coral;
+}
+
+.social-icon-wrap {
+    position: absolute;
+    top: 80px;
+    left: 67px;
+} 
+
+.icon-color {
+    color: #F4CE14;
+    font-size: 20px;
+    padding-top: 10px;
+    margin-left: 4px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: black;
+}
+.icon-color:hover {
+    color: black;
+    font-size: 20px;
+    padding-top: 10px;
+    margin-left: 4px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #F4CE14;
+}
+
+
