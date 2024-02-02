@@ -11,12 +11,14 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background-color:black;
+    background-color:black; 
+
 }
 .container {
     height: 423px;
     display: flex;
     justify-content: flex-end;
+    
 }
 .animated-bg {
     left: 90px;
@@ -28,7 +30,7 @@
     border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
     display: block;
     z-index: 0;
-    animation: bubbleAnimation 3s ease-in-out infinite alternate;
+    animation: bubbleAnimation 4s ease-in-out infinite alternate;
 }
 @keyframes bubbleAnimation {
     0%, 100% {
@@ -36,14 +38,14 @@
         transform: translate3d(0, 0, 0) rotateZ(0.01deg); 
     }
     34% {
-        transform: translate3d(0, 5px, 0) rotateZ(0.01deg); 
+        transform: translate3d(0, 10px, 0) rotateZ(0.01deg); 
     }
     50% {
         transform: translate3d(0, 0, 0) rotateZ(0.01deg); 
     }
     67% {
         border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; 
-        transform: translate3d(0, -3px, 0) rotateZ(0.01deg); 
+        transform: translate3d(0, -3px, 0) rotateZ(10deg); 
     }
 }
 .content {
@@ -68,6 +70,7 @@ h5 {
     margin: 5px;
     clear: both;
     font-family: 'Marhey', sans-serif;
+    animation: bubbleAnimation 3s ease-in-out infinite alternate;
 }
 h2 {
     font-size: 78px;
@@ -75,13 +78,33 @@ h2 {
     font-weight: 800;
     color:  #F4CE14;
     font-family: 'Marhey', sans-serif;
+    animation: h2animation 4s ease-in-out infinite alternate;
 }
+
+@keyframes h2animation {
+    0%, 100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg); 
+    }
+    20% {
+        transform: translate3d(0, 5px, 0) rotateZ(0.01deg); 
+    }
+    60% {
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg); 
+    }
+    80% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; 
+        transform: translate3d(0, -3px, 0) rotateZ(0.01deg); 
+    }
+}
+
 p {
     margin: 5px;
     padding: 0;
     font-size: 22px;
     color: #e28913;
     font-family: 'Shadows Into Light', cursive;
+    animation: bubbleAnimation 3s ease-in-out infinite alternate;
 }
 
 
@@ -114,6 +137,7 @@ p {
     position: absolute;
     top: 80px;
     left: 67px;
+    z-index: 1;
 } 
 
 .icon-color {
@@ -140,3 +164,44 @@ p {
 }
 
 
+svg:hover  {
+    z-index: 0;
+    animation: bubbleAnimation 3s ease-in-out infinite alternate;
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+    }
+        
+    #section-main{
+        height: 1092px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        background-color:black; 
+    
+    }
+    .container {
+        height: 423px;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+    }
+
+    .content-wrap {
+        height: 258px;
+        position: relative;
+    } 
+    
+}
