@@ -169,39 +169,4 @@ svg:hover  {
     animation: bubbleAnimation 3s ease-in-out infinite alternate;
 }
 
-@media screen and (max-width: 600px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: white;
-    }
-        
-    #section-main{
-        height: 1092px;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        background-color:black; 
-    
-    }
-    .container {
-        height: 423px;
-        display: flex;
-        justify-content: flex-end;
-        
-    }
 
-    .content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap; 
-    }
-
-    .content-wrap {
-        height: 258px;
-        position: relative;
-    } 
-    
-}
