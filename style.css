@@ -32,21 +32,23 @@
     z-index: 0;
     animation: bubbleAnimation 4s ease-in-out infinite alternate;
 }
-@keyframes bubbleAnimation {
-    0%, 100% {
-        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-        transform: translate3d(0, 0, 0) rotateZ(0.01deg); 
-    }
-    34% {
-        transform: translate3d(0, 10px, 0) rotateZ(0.01deg); 
-    }
-    50% {
-        transform: translate3d(0, 0, 0) rotateZ(0.01deg); 
-    }
-    67% {
-        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; 
-        transform: translate3d(0, -3px, 0) rotateZ(10deg); 
-    }
+
+
+.img-wrapp {
+    border-radius: 10px;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 68px;  
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+}
+
+.img-wrapp img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 .content {
     margin-top: 50px;
@@ -81,23 +83,6 @@ h2 {
     animation: h2animation 4s ease-in-out infinite alternate;
 }
 
-@keyframes h2animation {
-    0%, 100% {
-        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-        transform: translate3d(0, 0, 0) rotateZ(0.01deg); 
-    }
-    20% {
-        transform: translate3d(0, 5px, 0) rotateZ(0.01deg); 
-    }
-    60% {
-        transform: translate3d(0, 0, 0) rotateZ(0.01deg); 
-    }
-    80% {
-        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; 
-        transform: translate3d(0, -3px, 0) rotateZ(0.01deg); 
-    }
-}
-
 p {
     margin: 5px;
     padding: 0;
@@ -108,22 +93,6 @@ p {
 }
 
 
-.img-wrapp {
-    border-radius: 10px;
-    overflow: hidden;
-    top: 0;
-    bottom: 0;
-    left: 68px;  
-    display: flex;
-    justify-content: center; 
-    position: absolute;
-}
-
-.img-wrapp img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 .buttom-style {
     width: 400px;
     height: 350px;
@@ -164,9 +133,131 @@ p {
 }
 
 
-svg:hover  {
+svg {
     z-index: 0;
-    animation: bubbleAnimation 3s ease-in-out infinite alternate;
+    animation: bubbleAnimation 3.5s ease-in-out infinite alternate;
+}
+.bubble{
+    animation: strokeColorAnimation 3.5s ease-in-out infinite alternate;
+}
+@keyframes bubbleAnimation {
+    0%, 100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg); 
+        stroke-dasharray: 50,50;
+    }
+    34% {
+        transform: translate3d(0, 10px, 0) rotateZ(0.01deg);
+        stroke-dasharray: 100, 100; 
+    }
+    50% {
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+        stroke-dasharray: 50, 80; /* Half stroke visible */ 
+    }
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; 
+        transform: translate3d(0, -3px, 0) rotateZ(10deg); 
+        stroke-dasharray: 100,110; /* Full stroke visible */
+    }
 }
 
 
+@keyframes h2animation {
+    0%, 100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg); 
+    }
+    20% {
+        transform: translate3d(0, 5px, 0) rotateZ(0.01deg); 
+    }
+    60% {
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg); 
+    }
+    80% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; 
+        transform: translate3d(0, -3px, 0) rotateZ(0.01deg); 
+    }
+}
+
+@keyframes strokeColorAnimation {
+    0% {
+        stroke: #38ff38; /* Black */
+    }
+    34% {
+        stroke: #00d9ff; /* Red */
+    }
+    50% {
+        stroke: #ffffff;  /* Green */
+    }
+    67% {
+        stroke: #0000ff; /* Blue */
+    }
+    100% {
+        stroke:#00ddff/* Back to Black */
+    }
+}
+@media screen and (max-width: 579px) {
+    #section-main {
+        height: 915px;
+    }
+    .container {
+        height: 915px;
+    }
+    .animated-bg {
+        left: 20px;
+        width: 85%;
+        height: 56%;
+        background-color: #FF9800;
+        position: absolute;
+        top: 73px;
+        border: 3px solid white;
+        border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+        display: block;
+        z-index: 0;
+        animation: bubbleAnimation 2.5s ease-in-out infinite alternate;
+    }  
+    .content {
+        height: 100%;
+        margin: auto;
+        width: 100%;
+    }
+    .img-wrapp{
+        width: 100%;  
+        left: 0px;
+        right: 0px;
+        top: 50px;
+
+    }
+
+    .img-wrapp img {
+        width: 410px;
+        height: 775px;
+        object-fit: cover;
+    }
+    .buttom-style {
+        width: 484px;
+        height: 274px;
+        top: 692px;
+        position: absolute;
+        color: coral;
+    }
+    .social-icon-wrap {
+        position: absolute;
+        top: 95px;
+        left: 54px;
+        z-index: 1;
+        padding-top: 34px;
+        margin-left: -24px;
+    }
+    .icon-color {
+        color: #F4CE14;
+        font-size: 39px;
+        padding-top: 13px;
+        margin-left: 16px;
+        height: 66px;
+        width: 66px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: black;
+    }
+}
