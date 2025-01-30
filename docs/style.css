@@ -75,7 +75,7 @@ body {
 .image-section {
     height: 100vh; 
     flex: 1;
-    background: url('anup3.png') left center/contain no-repeat;
+    background: url('/docs/anup3.png') left center/contain no-repeat;
     position: relative;
     z-index: 1; 
 }
