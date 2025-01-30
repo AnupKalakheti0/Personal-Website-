@@ -74,13 +74,18 @@ body {
 }
 .image-section {
     height: 100vh; 
-    flex: 1;
-    background-image: url('anup3.png');
-    background-position: left center;
-    background-size: contain;
-    background-repeat: no-repeat;
     position: relative;
-    z-index: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 .content-section {
     padding: 0 5%;
