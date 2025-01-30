@@ -446,7 +446,7 @@ body {
 .image-section {
     height: 100vh; 
     flex: 1;
-    background: url('../photo/anup3.png') left center/contain no-repeat;
+    background: url('../docs/photo/anup3.png') left center/contain no-repeat;
     position: relative;
     z-index: 1; 
 }
