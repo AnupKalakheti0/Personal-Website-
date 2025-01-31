@@ -223,6 +223,57 @@ text-align: center;
 text-transform: uppercase;
 letter-spacing: 2px;
 }
+
+/* Third Page Styles */
+.page-3 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.box3{
+    background: #1e293b; 
+    padding: 20px;
+    width: 32%;
+    height: 33rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.p3h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #38bdf8; /* Accent color */
+    border-bottom: 2px solid #38bdf8;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+.iframe-container{
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+iframe {
+    width: 100%;
+    height: 100%; 
+    border: none;
+    border-radius: 5px;
+    overflow: hidden !important;
+}
+.twitter-container {
+    flex: 1;
+    overflow-y: auto;
+}
+.twitter-timeline {
+    height: 100% !important;
+}
+
 /*Footer Styles */
 .footer {
 
@@ -288,6 +339,17 @@ color: #64748b;
 font-size: 0.9rem;
 }
 @media (max-width: 768px) {
+    .page-3 {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .box3 {
+        width: 100%;
+    }
+    .iframe-container {
+        margin-left: 1.5rem;
+    }
     .dream-text{
         font-size: 2.4rem;
         margin-bottom: 2rem;
@@ -300,6 +362,8 @@ font-size: 0.9rem;
         height: 67vh;
         align-items: normal;
         padding: 0;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
     }
     .footer-author h3{
         font-size: 2rem;
