@@ -87,6 +87,7 @@ body {
     object-fit: cover;
     z-index: -1;
 }
+
 .content-section {
     padding: 0 5%;
     position: relative;
@@ -141,76 +142,6 @@ body {
 .social-icon.linkedin:hover {
      background: #0A66C2; }
 
-
-/* Responsive Design */
-@media (max-width: 992px) {
-    .main-container {
-        grid-template-columns: 1fr;
-        height: auto;
-        min-height: 83vh;
-    }
-
-    .image-section {
-        height: 60vh;
-        margin-top: 3rem;
-    }
-
-    .content-section {
-        text-align: center;
-    }
-
-    .main-title {
-        font-size: 2.5rem;
-    }
-
-    .navbar {
-        height: 4rem;
-        background: rgba(0, 0, 0, 0.9);
-    }
-}
-@media (max-width: 576px) {
-    .main-title {
-        font-size: 2rem;
-        color:#38bdf8;
-    }
-
-    .social-links{
-        margin-top: 1rem;
-        margin-left: 2.5rem;
-    }
-    .designation {
-        font-size: 1.2rem;
-        margin: 10px;
-    }
-
-    .nav-links {
-        gap: 1rem;
-    }
-
-    .logo {
-        font-size: 1.1rem;
-        margin-left: -0.6rem;
-    }
-}
-    @media (max-width: 576px) {
-    .main-title {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .nav-links {
-        gap: 0.5rem;
-        font-size: 0.9rem;
-    }
-
-    .social-icon {
-        width: 54px;
-        font-size: 2rem;
-        height: 54px;
-    }
-}
-}
-
 /* Page 2 Styles */
 .page-2 {
 height: 103vh;
@@ -254,8 +185,6 @@ display: flex;
 flex-direction: column;
 align-items: center; 
 }
-
-
 .image-slider {
 display: flex; 
 justify-content: center;
@@ -286,8 +215,6 @@ width: 100%;
 object-fit: cover;
 opacity: 0.9;
 }
-
-
 .gallery-title {
 margin-bottom: 1rem;
 font-size: 2rem;
@@ -296,49 +223,6 @@ text-align: center;
 text-transform: uppercase;
 letter-spacing: 2px;
 }
-@media (max-width: 576px) {
-    .main-title {
-        font-size: 2rem;
-        color:#38bdf8;
-    }
-
-    .social-links{
-        margin-top: 1rem;
-        margin-left: 2.5rem;
-    }
-    .designation {
-        font-size: 1.2rem;
-        margin: 10px;
-    }
-
-    .nav-links {
-        gap: 1rem;
-    }
-
-    .logo {
-        font-size: 1.1rem;
-        margin-left: -0.6rem;
-    }
-}
-    @media (max-width: 576px) {
-    .main-title {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .nav-links {
-        gap: 0.5rem;
-        font-size: 0.9rem;
-    }
-
-    .social-icon {
-        width: 54px;
-        font-size: 2rem;
-        height: 54px;
-    }
-}
-
-
 /*Footer Styles */
 .footer {
 
@@ -387,17 +271,14 @@ justify-content: center;
 gap: 1.5rem;
 margin-bottom: 2rem;
 }
-
 .footer-social-links a {
 color: #FFD700;
 font-size: 1.8rem;
 transition: 0.3s;
 }
-
 .footer-social-links a:hover {
 color: #FFA500;
 }
-
 .copyright {
 position: absolute;
 bottom: 2rem;
@@ -406,16 +287,17 @@ left: 0;
 color: #64748b;
 font-size: 0.9rem;
 }
-
-    @media (max-width: 768px) {
-
+@media (max-width: 768px) {
     .dream-text{
-        font-size: 2.2rem;
+        font-size: 2.4rem;
         margin-bottom: 2rem;
         line-height: 1.4;
     }
+    .quote-text{
+        font-size: 2.4rem;
+    }
     .footer{
-        height: 89vh;
+        height: 67vh;
         align-items: normal;
         padding: 0;
     }
@@ -439,5 +321,69 @@ font-size: 0.9rem;
     .copyright p {
         color: #64748b;
     }
-}       
+}  
+@media (max-width: 576px) {
+    .main-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color:#38bdf8;
+    }
+    .social-links{
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+    .gallery-title{
+        font-size: 1.6rem;
+    }
+    .designation {
+        font-size: 1.7rem;
+        margin: 10px;
+    }
+    .logo{
+        font-size: 1.1rem;
+        margin-left: -0.6rem;
+    }
+    .nav-links {
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .social-icon {
+        width: 76px;
+        font-size: 2.5rem;
+        height: 76px;
+    }
+}
+@media (max-width: 992px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        height: auto;
+        min-height: 83vh;
+    }
+    .slider-container {
+        margin-top: 7rem;
+    }
+    .image-section {
+        height: 60vh;
+        margin-top: 3rem;
+    }
+    .image-slider {
+        width: 133%;
+    }
+    .image-box{
+        min-width: 32%;
+        height: 80%;
+        margin: 0rem 8rem 0rem -6rem;
+    }
+    .content-section {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .main-title {
+        font-size: 2.5rem;
+    }
 
+    .navbar {
+        height: 4rem;
+        background: rgba(0, 0, 0, 0.9);
+    }
+}
