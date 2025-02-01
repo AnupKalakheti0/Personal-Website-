@@ -339,6 +339,12 @@ color: #64748b;
 font-size: 0.9rem;
 }
 @media (max-width: 768px) {
+        .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .thoughts-grid {
+        grid-template-columns: 1fr;
+    }
     .page-3 {
         flex-direction: column;
         padding: 20px;
