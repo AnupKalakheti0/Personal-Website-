@@ -57,3 +57,51 @@
 .submit-btn:hover {
     background: #0ea5e9;
 }
+
+
+@media screen and (max-width: 461px) {
+    .page-5 {
+        margin-top: 50px;
+        padding: 3rem 2%;
+        /* Adjust border if needed */
+        border-top: 1px solid #1e293b;
+    }
+    
+    .contact-container {
+        padding: 0 1rem;
+    }
+
+    .contact-grid {
+        display: block;  /* Stack elements vertically */
+        gap: 2rem;
+    }
+    
+    .contact-info {
+        padding: 3rem 2rem;
+        margin-top: 0;
+        height: auto;  /* Allow height to adjust based on content */
+    }
+    
+    .contact-form .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+    
+    .submit-btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 14px;
+    }
+    
+    .info-item {
+        margin-bottom: 1.8rem;
+    }
+    
+    .info-item i {
+        font-size: 1rem;
+    }
+}
