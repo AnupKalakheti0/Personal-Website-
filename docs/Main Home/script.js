@@ -42,3 +42,23 @@ window.addEventListener('resize', () => {
     slider.style.transform = 'translateX(0)';
     void slider.offsetHeight;
 });
+// "Read More" toggle functionality for each thought card.
+const readMoreButtons = document.querySelectorAll('.read-more-btn');
+readMoreButtons.forEach(button => {
+    button.addEventListener('click', () => {
+// Toggle the expansion of the adjacent thought-text paragraph.
+    const thoughtText = button.previousElementSibling;
+        thoughtText.classList.toggle('expanded');
+        button.textContent = thoughtText.classList.contains('expanded') ? 'Show Less' : 'Read More';
+    });
+});
+// "Show Translation" toggle functionality for each thought card.
+const translateButtons = document.querySelectorAll('.translate-btn');
+translateButtons.forEach(button => {
+    button.addEventListener('click', () => {
+// Toggle the visibility of the translation paragraph.
+        const translationText = button.nextElementSibling;
+        translationText.classList.toggle('visible');
+        button.textContent = translationText.classList.contains('visible') ? 'Hide Translation' : 'Show Translation';
+    });
+});
