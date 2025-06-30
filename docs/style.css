@@ -339,6 +339,12 @@ color: #64748b;
 font-size: 0.9rem;
 }
 @media (max-width: 576px) {
+      .contact-info {
+        padding: 3rem 2rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        height: auto;
+    }
     .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -396,8 +402,8 @@ font-size: 0.9rem;
         color:#38bdf8;
     }
     .social-links{
-        margin-top: 3rem;
-        margin-left: 1rem;
+        margin-top: 2rem;
+        margin-left: -1rem;
     }
     .gallery-title{
         font-size: 1.6rem;
@@ -452,8 +458,17 @@ font-size: 0.9rem;
     .navbar {
         height: 4rem;
         background: rgba(0, 0, 0, 0.9);
+        width: 26rem;
     }
     .navbar.scrolled .logo {
         font-size: 0.9rem;
     }
+    .top-content h3 {
+        padding: 0px;
+    }
+    label {
+        margin: 0rem 0rem;
+        cursor: pointer;
+    }
+  
 }
