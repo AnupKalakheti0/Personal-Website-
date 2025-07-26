@@ -18,7 +18,15 @@
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="Gallery/gallery.html">Gallery</a>
-            <a href="Thought/thought.html">Thoughts</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">
+                    Content <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="Content/Blog/blog.html">Blog</a>
+                    <a href="Content/Thought/thought.html">Thoughts</a>
+                </div>
+            </div>
             <a href="Contact/contact.html">Contact</a>
             <a href="Video/video.html">Video</a>
         </div>
@@ -29,9 +37,9 @@
             <img class="background-image" src="Photo/anup3.png" alt="Anup Kalakheti">
         </div>     
         <div class="content-section">
-            <div class="designation"> Namaste 🙏</div>
+            <div class="greeting"> Namaste 🙏</div>
             <h1 class="main-title"> ANUP KALAKHETI </h1>
-            <div class="designation">
+            <div class="subtitle">
                 From beautiful country Nepal !
             </div>
 
@@ -54,15 +62,19 @@
     </main>
 
 <!-- Second Page -->
-<section class="page-2">
-<!-- Quote Section -->
-    <div class="royal-quote">
-            <div class="quote-text">
-                "Nepal's destiny remains in darkness without the royal crown, for only the king's return can restore the nation's light and prosperity."
+ <section class="page-section royal-quote-section">
+        <div class="container">
+            <div class="royal-quote">
+                <div class="quote-text">
+                    "Nepal's destiny remains in darkness without the royal crown, for only the king's return can restore the nation's light and prosperity."
+                </div>
+                <div class="quote-author">- Anup Kalakheti</div>
             </div>
-            <div class="quote-author">- Anup Kalakheti</div>
-    </div>
+        </div>
+</section>
+
 <!-- Image Slider Section -->
+<section class="page3">
     <div class="slider-container">
                 <h2 class="gallery-title">Few Images of Kalakheti</h2>
             <div class="image-slider" id="slider">
@@ -102,83 +114,90 @@
                 </div>
             </div>
     </div>
-
 </section>
 
-    <!-- Third Page -->
-<section class="page-3">
-<!-- facebook official -->
-    <div class="box3 fb-box">
-        <h2 class="p3h2">Facebook</h2>
-        <div class="iframe-container">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/anupkalakhetii&tabs=timeline&width=340&height=500" 
-            scrolling="no" 
-            frameborder="0"
-            allowtransparency="true"
-            style="overflow: hidden;"
-            ></iframe>
-        </div>
-    </div>
-<!-- facebookPage -->
-    <div class="box3 FbP-box">
-        <h2 class="p3h2">Facebook Page</h2>
-        <div class="iframe-container">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/anupkalakheti00&tabs=timeline&width=340&height=500" 
-            scrolling="no"
-            frameborder="0"
-            allowtransparency="true"
-            style="overflow: hidden;"></iframe>
-        </div>
-    </div>
-<!-- twitterX box -->
-    <div class="box3 tw-box">
-            <h2 class="p3h2">Twitter</h2>
-            <div class="twitter-container">
-                <a class="twitter-timeline" href="https://x.com/Anupkalakheti"
-                data-height="500"
-                data-chrome="noscrollbar">Tweets by Anup Kalakheti</a>
-                <script async src="https://platform.twitter.com/widgets.js"></script>
-            </div>
-    </div>
-</section>
-    <!-- Footer -->
-    <section class="footer">
-        <div class="footer-content">
-            <!-- Thought/Quote Section -->
-            <div class="footer-thought">
-                <div class="quote-text">
-                    "Nepal's destiny remains in darkness without the royal crown, for only the king's return can restore the nation's light and prosperity."
+<!-- Third Page -->
+    <section class="page-section social-embed-section">
+        <div class="container">
+            <div class="embed-grid">
+                <div class="embed-box">
+                    <h2 class="embed-title">Facebook Profile</h2>
+                    <div class="iframe-container">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fanupkalakhetii&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                            scrolling="no" 
+                            frameborder="0"
+                            allowtransparency="true"
+                            allow="encrypted-media"
+                            style="border:none; overflow:hidden;"></iframe>
+                    </div>
                 </div>
-                <div class="quote-author">- Anup Kalakheti</div>
-            </div>
-    
-            <!-- Social Connect Section -->
-            <div class="connect-section">
-                <h4> GET CONNECTED</h4>
-                <!-- <div class="connect-button">Let's Collaborate</div> -->
-                <div class="footer-social-links">
-                <a href="https://www.facebook.com/anupkalakheti0" class="social-icon facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://x.com/Anupkalakheti0" class="social-icon twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com/anup.kalakheti/" class="social-icon instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/anup-kalakheti-04b28a236/" class="social-icon linkedin">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
+                <div class="embed-box">
+                    <h2 class="embed-title">Facebook Page</h2>
+                    <div class="iframe-container">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fanupkalakheti00&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                            scrolling="no"
+                            frameborder="0"
+                            allowtransparency="true"
+                            allow="encrypted-media"
+                            style="border:none; overflow:hidden;"></iframe>
+                    </div>
                 </div>
-            </div>
-    
-            <!-- Copyright -->
-            <div class="copyright">
-                <p>Copyright &copy; 2025 Anup Kalakheti | All Rights Reserved</p>
+                <div class="embed-box">
+                    <h2 class="embed-title">Twitter (X)</h2>
+                    <div class="twitter-container">
+                        <a class="twitter-timeline" href="https://x.com/Anupkalakheti"
+                        data-height="500"
+                        data-chrome="noscrollbar noheader nofooter">Tweets by Anup Kalakheti</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-logo">ANUP KALAKHETI</div>
+                <p class="footer-desc">
+                    Namaste! I’m Anup. Welcome to my digital home. Thank you for visiting!
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="Gallery/gallery.html"><i class="fas fa-image"></i> Gallery</a></li>
+                    <li><a href="Blog/blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="Thought/thought.html"><i class="fas fa-lightbulb"></i> Thoughts</a></li>
+                    <li><a href="Contact/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="Video/video.html"><i class="fas fa-video"></i> Video</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Sankhuwasabha, Nepal</li>
+                    <li><i class="fas fa-envelope"></i> kalakhetianup8@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +977 9846834005</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Me</h4>
+                <div class="footer-social-icons">
+                    <a href="https://www.facebook.com/anupkalakheti0" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/Anupkalakheti0" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/anup.kalakheti/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/anup-kalakheti-04b28a236/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2024 Anup Kalakheti. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
